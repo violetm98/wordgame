@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.gatech.seclass.wordfind6300">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".GameSession"
+            android:label="@string/title_activity_game_session"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WordStatsActivity"
+            android:label="@string/title_activity_word_stats"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            />
+        <activity
+            android:name=".Stats"
+            android:label="@string/title_activity_stats"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".AppManager"/>
+        <activity
+            android:name=".AdjustSetting"
+            android:label="@string/title_activity_adjust_setting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".AppManager"/>
+        <activity
+            android:name=".AppManager"
+            android:label="@string/title_activity_app_manager"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameStatsActivity"
+            android:label="@string/title_activity_game_stats"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PopupScore"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+
+    </application>
+
+</manifest>
